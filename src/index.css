@@ -1,0 +1,156 @@
+:root {
+  /* Flat cartoon palette — no gradients */
+  --ink: #1a1208;
+  --paper: #f5e6c8;
+  --paper-dark: #e8d4a8;
+  --cream: #fff8e7;
+  --red: #c0392b;
+  --red-dark: #922b21;
+  --yellow: #f1c40f;
+  --yellow-dark: #d4ac0d;
+  --teal: #1abc9c;
+  --teal-dark: #148f77;
+  --purple: #8e44ad;
+  --purple-dark: #6c3483;
+  --blue: #3498db;
+  --blue-dark: #2471a3;
+  --orange: #e67e22;
+  --orange-dark: #ca6f1e;
+  --pink: #e91e63;
+  --lime: #8bc34a;
+
+  --border: 3px solid var(--ink);
+  --shadow: 4px 4px 0 var(--ink);
+  --shadow-sm: 2px 2px 0 var(--ink);
+
+  --font-display: 'Bangers', cursive;
+  --font-body: 'Patrick Hand', cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: clamp(16px, 4vw, 20px);
+  color: var(--ink);
+  background-color: var(--paper);
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v1H0zm4 4h1v1H4z' fill='%23d4c4a0' fill-opacity='0.4'/%3E%3C/svg%3E");
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+button {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+  cursor: pointer;
+  border: var(--border);
+  background: var(--orange);
+  color: var(--ink);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  touch-action: manipulation;
+}
+
+button:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+button:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+button.danger {
+  background: var(--red);
+  color: var(--cream);
+}
+
+.cartoon-panel {
+  background: var(--cream);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: clamp(0.85rem, 3vw, 1.25rem);
+}
+
+/* Title style — red hard shadow, NO yellow */
+.cartoon-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 3rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cream);
+  -webkit-text-stroke: 2px var(--ink);
+  paint-order: stroke fill;
+  text-shadow: 3px 3px 0 var(--red-dark);
+}
+
+.cartoon-subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  letter-spacing: 0.04em;
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0.3) rotate(-8deg); opacity: 0; }
+  60% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+  80% { transform: scale(0.95) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes pop-number {
+  0% { transform: scale(0.5); }
+  70% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px) rotate(-1deg); }
+  75% { transform: translateX(4px) rotate(1deg); }
+}
+
+.bounce-in {
+  animation: bounce-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.pop-number {
+  animation: pop-number 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.shake {
+  animation: shake 0.4s ease both;
+}
+

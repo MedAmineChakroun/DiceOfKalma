@@ -1,0 +1,93 @@
+.die {
+  --die-rotation: 0deg;
+  --face-color: var(--cream);
+  position: relative;
+  width: clamp(58px, 16vw, 72px);
+  height: clamp(58px, 16vw, 72px);
+  padding: 0;
+  background: var(--face-color);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  transform: rotate(var(--die-rotation));
+  transition: transform 0.12s ease, box-shadow 0.12s;
+}
+
+.die-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.die:not(:disabled):not(.die-rolling):hover {
+  filter: brightness(1.08);
+}
+
+.die-selected {
+  transform: rotate(var(--die-rotation)) translateY(-8px);
+  box-shadow: 4px 10px 0 var(--ink);
+  outline: 3px dashed var(--ink);
+  outline-offset: 2px;
+}
+
+.die-rolling .die-inner {
+  animation: dice-tumble 0.55s cubic-bezier(0.45, 0.05, 0.55, 0.95) both;
+}
+
+.die-rolling {
+  pointer-events: none;
+}
+
+.die-disabled:not(.die-rolling) {
+  cursor: default;
+}
+
+.die-face {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  padding: clamp(8px, 2vw, 10px);
+}
+
+.die-pip {
+  width: clamp(10px, 2.5vw, 12px);
+  height: clamp(10px, 2.5vw, 12px);
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  place-self: center;
+}
+
+.die-index {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background: var(--purple);
+  color: var(--cream);
+  border: 2px solid var(--ink);
+  font-size: 0.65rem;
+  font-family: var(--font-display);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+@keyframes dice-tumble {
+  0% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(90deg) scale(0.85); }
+  40% { transform: rotate(180deg) scale(1.1); }
+  60% { transform: rotate(270deg) scale(0.9); }
+  80% { transform: rotate(360deg) scale(1.05); }
+  100% { transform: rotate(405deg) scale(1); }
+}
+
+.dice-tray {
+  display: flex;
+  gap: clamp(0.5rem, 3vw, 1rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem 0;
+}

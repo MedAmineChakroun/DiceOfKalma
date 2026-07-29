@@ -1,0 +1,180 @@
+.game-layout {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(0.75rem, 3vw, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.65rem, 2vw, 1rem);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.game-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-btn {
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  padding: 0.35rem 0.65rem;
+  background: var(--purple);
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+.header-spacer {
+  width: 60px;
+}
+
+.game-logo-wrap {
+  justify-self: center;
+}
+
+.game-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.75rem, 3vw, 1.5rem);
+  min-height: 220px;
+  justify-content: center;
+  background: var(--cream);
+  position: relative;
+}
+
+/* Cuphead wavy top edge on game panel */
+.game-main::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 10%;
+  right: 10%;
+  height: 8px;
+  background: var(--red);
+  border: 2px solid var(--ink);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.combo-hint {
+  min-height: 1.5rem;
+  color: var(--purple-dark);
+  font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  text-align: center;
+}
+
+.action-row {
+  display: flex;
+  gap: clamp(0.5rem, 3vw, 1rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.action-row button {
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+  font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+}
+
+.end-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.end-panel {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.end-panel.victory {
+  background: var(--teal);
+  color: var(--cream);
+}
+
+.end-title {
+  font-size: clamp(2rem, 8vw, 3rem);
+}
+
+.end-stat {
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+}
+
+.end-save {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.end-saved {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--teal-dark);
+}
+
+.cartoon-input {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  padding: 0.5rem 0.75rem;
+  border: var(--border);
+  background: var(--cream);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+}
+
+.cartoon-input:focus {
+  outline: 3px solid var(--teal);
+  outline-offset: 1px;
+}
+
+@media (max-width: 480px) {
+  .header-spacer {
+    width: 0;
+  }
+
+  .game-header {
+    grid-template-columns: auto 1fr;
+  }
+
+  .game-logo-wrap {
+    grid-column: 1 / -1;
+    justify-self: center;
+    order: -1;
+  }
+
+  .menu-btn {
+    grid-row: 2;
+  }
+
+  .header-spacer {
+    display: none;
+  }
+
+  .action-row button {
+    max-width: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .game-layout {
+    padding: 0.5rem;
+  }
+
+  .cartoon-panel {
+    padding: 0.85rem;
+  }
+}
+

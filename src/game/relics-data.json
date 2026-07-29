@@ -1,0 +1,1279 @@
+[
+  {
+    "relicId": "1",
+    "name": "Atom",
+    "describtion": "if you have a 1 gain +2 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 1
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "2",
+    "name": "Iris",
+    "describtion": "if you have a 2 gain +2 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "3",
+    "name": "Zven",
+    "describtion": "if you have a 3 gain +2 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 3
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "4",
+    "name": "Emberfang",
+    "describtion": "if you have a 4 gain +2 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 4
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "5",
+    "name": "Voidshard",
+    "describtion": "if you have a 5 gain +2 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 5
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "6",
+    "name": "Runestone",
+    "describtion": "if you have a 6 gain +3 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 6
+    },
+    "effect": {
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "7",
+    "name": "Duskwyrm",
+    "describtion": "if the sum of your dice is higher than 12 gain +3 bones +1 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 12
+    },
+    "effect": {
+      "bones": 3,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "8",
+    "name": "Glimmer",
+    "describtion": "if the sum of your dice is higher than 15 gain +3 bones +1 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 15
+    },
+    "effect": {
+      "bones": 3,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "9",
+    "name": "Cinderclaw",
+    "describtion": "if the sum of your dice is higher than 18 gain +4 bones +1 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 18
+    },
+    "effect": {
+      "bones": 4,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "10",
+    "name": "Frostveil",
+    "describtion": "if the sum of your dice is higher than 20 gain +5 bones +2 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 20
+    },
+    "effect": {
+      "bones": 5,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "11",
+    "name": "Hollowmark",
+    "describtion": "if the sum of your dice is higher than 22 gain +5 bones +2 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 22
+    },
+    "effect": {
+      "bones": 5,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "12",
+    "name": "Ashenblade",
+    "describtion": "if the sum of your dice is higher than 25 gain +6 bones +2 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 25
+    },
+    "effect": {
+      "bones": 6,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "13",
+    "name": "Stormcaller",
+    "describtion": "if the sum of your dice is lower than 8 gain +8 bones +1 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 8
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "14",
+    "name": "Nightglass",
+    "describtion": "if the sum of your dice is lower than 10 gain +8 bones +1 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 10
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "15",
+    "name": "Sunspire",
+    "describtion": "if the sum of your dice is lower than 12 gain +8 bones +1 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 12
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "16",
+    "name": "Wraithbone",
+    "describtion": "if you play a high-die gain +4 bones +1 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "high-die"
+    },
+    "effect": {
+      "bones": 4,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "17",
+    "name": "Moltenheart",
+    "describtion": "if you play a pair gain +6 bones +1 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "pair"
+    },
+    "effect": {
+      "bones": 6,
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "18",
+    "name": "Gravewhisper",
+    "describtion": "if you play a two-pairs gain +10 bones +2 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "two-pairs"
+    },
+    "effect": {
+      "bones": 10,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "19",
+    "name": "Silverfen",
+    "describtion": "if you play a three gain +12 bones +2 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "three"
+    },
+    "effect": {
+      "bones": 12,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "20",
+    "name": "Thornveil",
+    "describtion": "if you play a full-house gain +15 bones +3 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "full-house"
+    },
+    "effect": {
+      "bones": 15,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "21",
+    "name": "Obsidian",
+    "describtion": "if you play a straight gain +18 bones +3 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "straight"
+    },
+    "effect": {
+      "bones": 18,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "22",
+    "name": "Wyrmscale",
+    "describtion": "if you play a four gain +22 bones +4 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "four"
+    },
+    "effect": {
+      "bones": 22,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "23",
+    "name": "Copperfang",
+    "describtion": "if you play a five gain +30 bones +6 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "five"
+    },
+    "effect": {
+      "bones": 30,
+      "mult": 6
+    }
+  },
+  {
+    "relicId": "24",
+    "name": "Tidebreaker",
+    "describtion": "if you have at least 2 1s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 1,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "25",
+    "name": "Emberash",
+    "describtion": "if you have at least 3 1s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 1,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "26",
+    "name": "Palewind",
+    "describtion": "if you have at least 2 2s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "27",
+    "name": "Ironmoth",
+    "describtion": "if you have at least 3 2s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "28",
+    "name": "Duskbloom",
+    "describtion": "if you have at least 2 3s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "29",
+    "name": "Starfallen",
+    "describtion": "if you have at least 3 3s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "30",
+    "name": "Bramblewick",
+    "describtion": "if you have at least 2 4s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "31",
+    "name": "Coldforge",
+    "describtion": "if you have at least 3 4s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "32",
+    "name": "Grimhollow",
+    "describtion": "if you have at least 2 5s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "33",
+    "name": "Wickerlight",
+    "describtion": "if you have at least 3 5s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "34",
+    "name": "Sablewing",
+    "describtion": "if you have at least 2 6s gain +2 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "35",
+    "name": "Brasshollow",
+    "describtion": "if you have at least 3 6s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "36",
+    "name": "Verdant",
+    "describtion": "if all your dice show the same value gain +15 bones +4 Mult",
+    "condition": {
+      "type": "all_same"
+    },
+    "effect": {
+      "bones": 15,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "37",
+    "name": "Ashfall",
+    "describtion": "if none of your dice repeat gain +3 Mult",
+    "condition": {
+      "type": "no_duplicates"
+    },
+    "effect": {
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "38",
+    "name": "Nightloom",
+    "describtion": "if you have at least 3 even dice gain +9 bones",
+    "condition": {
+      "type": "even_count_gte",
+      "count": 3
+    },
+    "effect": {
+      "bones": 9
+    }
+  },
+  {
+    "relicId": "39",
+    "name": "Skyrend",
+    "describtion": "if you have at least 4 even dice gain +12 bones",
+    "condition": {
+      "type": "even_count_gte",
+      "count": 4
+    },
+    "effect": {
+      "bones": 12
+    }
+  },
+  {
+    "relicId": "40",
+    "name": "Fenwalker",
+    "describtion": "if you have at least 5 even dice gain +15 bones",
+    "condition": {
+      "type": "even_count_gte",
+      "count": 5
+    },
+    "effect": {
+      "bones": 15
+    }
+  },
+  {
+    "relicId": "41",
+    "name": "Glasswing",
+    "describtion": "if you have at least 3 odd dice gain +1 Mult",
+    "condition": {
+      "type": "odd_count_gte",
+      "count": 3
+    },
+    "effect": {
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "42",
+    "name": "Deeproot",
+    "describtion": "if you have at least 4 odd dice gain +1 Mult",
+    "condition": {
+      "type": "odd_count_gte",
+      "count": 4
+    },
+    "effect": {
+      "mult": 1
+    }
+  },
+  {
+    "relicId": "43",
+    "name": "Solstice",
+    "describtion": "if you have at least 5 odd dice gain +3 Mult",
+    "condition": {
+      "type": "odd_count_gte",
+      "count": 5
+    },
+    "effect": {
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "44",
+    "name": "Gloamspire",
+    "describtion": "if the sum of your dice is higher than 28 gain +9 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 28
+    },
+    "effect": {
+      "bones": 9,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "45",
+    "name": "Cragmantle",
+    "describtion": "if the sum of your dice is higher than 29 gain +9 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 29
+    },
+    "effect": {
+      "bones": 9,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "46",
+    "name": "Farsight",
+    "describtion": "if the sum of your dice is higher than 13 gain +5 bones +2 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 13
+    },
+    "effect": {
+      "bones": 5,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "47",
+    "name": "Hexroot",
+    "describtion": "if the sum of your dice is higher than 16 gain +6 bones +2 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 16
+    },
+    "effect": {
+      "bones": 6,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "48",
+    "name": "Mistfall",
+    "describtion": "if the sum of your dice is higher than 24 gain +8 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 24
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "49",
+    "name": "Ironveil",
+    "describtion": "if the sum of your dice is higher than 26 gain +8 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 26
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "50",
+    "name": "Copperleaf",
+    "describtion": "if the sum of your dice is lower than 6 gain +10 bones +2 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 6
+    },
+    "effect": {
+      "bones": 10,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "51",
+    "name": "Duskrider",
+    "describtion": "if the sum of your dice is lower than 9 gain +10 bones +2 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 9
+    },
+    "effect": {
+      "bones": 10,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "52",
+    "name": "Ashgrove",
+    "describtion": "if the sum of your dice is lower than 11 gain +10 bones +2 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 11
+    },
+    "effect": {
+      "bones": 10,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "53",
+    "name": "Wyrdstone",
+    "describtion": "if you have at least 4 1s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 1,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "54",
+    "name": "Palefire",
+    "describtion": "if you have at least 4 2s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "55",
+    "name": "Stonecrow",
+    "describtion": "if you have at least 4 3s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "56",
+    "name": "Amberlight",
+    "describtion": "if you have at least 4 4s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "57",
+    "name": "Hollowreed",
+    "describtion": "if you have at least 4 5s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "58",
+    "name": "Ravensworn",
+    "describtion": "if you have at least 4 6s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 4
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "59",
+    "name": "Coalheart",
+    "describtion": "if you have at least 5 1s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 1,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "60",
+    "name": "Silvermoth",
+    "describtion": "if you have at least 5 2s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "61",
+    "name": "Fenrune",
+    "describtion": "if you have at least 5 3s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "62",
+    "name": "Duststorm",
+    "describtion": "if you have at least 5 4s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "63",
+    "name": "Charwood",
+    "describtion": "if you have at least 5 5s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "64",
+    "name": "Glimmerfen",
+    "describtion": "if you have at least 5 6s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 5
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "65",
+    "name": "Thornback",
+    "describtion": "if you play a high-die gain +6 bones +2 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "high-die"
+    },
+    "effect": {
+      "bones": 6,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "66",
+    "name": "Rimewatch",
+    "describtion": "if you play a pair gain +8 bones +2 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "pair"
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "67",
+    "name": "Ashwake",
+    "describtion": "if you play a two-pairs gain +12 bones +3 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "two-pairs"
+    },
+    "effect": {
+      "bones": 12,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "68",
+    "name": "Deepvein",
+    "describtion": "if you play a three gain +14 bones +3 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "three"
+    },
+    "effect": {
+      "bones": 14,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "69",
+    "name": "Sungrove",
+    "describtion": "if you play a full-house gain +17 bones +4 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "full-house"
+    },
+    "effect": {
+      "bones": 17,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "70",
+    "name": "Duskmarsh",
+    "describtion": "if you play a straight gain +20 bones +4 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "straight"
+    },
+    "effect": {
+      "bones": 20,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "71",
+    "name": "Ironthorn",
+    "describtion": "if you play a four gain +24 bones +5 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "four"
+    },
+    "effect": {
+      "bones": 24,
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "72",
+    "name": "Wavecrest",
+    "describtion": "if you play a five gain +32 bones +7 Mult",
+    "condition": {
+      "type": "combo",
+      "value": "five"
+    },
+    "effect": {
+      "bones": 32,
+      "mult": 7
+    }
+  },
+  {
+    "relicId": "73",
+    "name": "Nightfen",
+    "describtion": "if you have at least 2 even dice gain +8 bones",
+    "condition": {
+      "type": "even_count_gte",
+      "count": 2
+    },
+    "effect": {
+      "bones": 8
+    }
+  },
+  {
+    "relicId": "74",
+    "name": "Emberveil",
+    "describtion": "if you have at least 2 odd dice gain +2 Mult",
+    "condition": {
+      "type": "odd_count_gte",
+      "count": 2
+    },
+    "effect": {
+      "mult": 2
+    }
+  },
+  {
+    "relicId": "75",
+    "name": "Grayspire",
+    "describtion": "if you have a 1 gain +4 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 1
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "76",
+    "name": "Loamheart",
+    "describtion": "if you have a 2 gain +4 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 2
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "77",
+    "name": "Wispglow",
+    "describtion": "if you have a 3 gain +4 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 3
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "78",
+    "name": "Cragfall",
+    "describtion": "if you have a 4 gain +4 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 4
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "79",
+    "name": "Brackenfen",
+    "describtion": "if you have a 5 gain +4 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 5
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "80",
+    "name": "Sootwing",
+    "describtion": "if you have a 6 gain +5 Mult",
+    "condition": {
+      "type": "contains",
+      "value": 6
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "81",
+    "name": "Halfmoon",
+    "describtion": "if you have at least 2 2s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 2
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "82",
+    "name": "Direwood",
+    "describtion": "if you have at least 3 2s gain +6 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 2,
+      "count": 3
+    },
+    "effect": {
+      "mult": 6
+    }
+  },
+  {
+    "relicId": "83",
+    "name": "Palestone",
+    "describtion": "if you have at least 2 3s gain +4 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 2
+    },
+    "effect": {
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "84",
+    "name": "Hollowspark",
+    "describtion": "if you have at least 3 3s gain +6 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 3,
+      "count": 3
+    },
+    "effect": {
+      "mult": 6
+    }
+  },
+  {
+    "relicId": "85",
+    "name": "Rustveil",
+    "describtion": "if the sum of your dice is higher than 14 gain +7 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 14
+    },
+    "effect": {
+      "bones": 7,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "86",
+    "name": "Cinderline",
+    "describtion": "if the sum of your dice is higher than 17 gain +8 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 17
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "87",
+    "name": "Vaultkeeper",
+    "describtion": "if the sum of your dice is higher than 19 gain +8 bones +3 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 19
+    },
+    "effect": {
+      "bones": 8,
+      "mult": 3
+    }
+  },
+  {
+    "relicId": "88",
+    "name": "Windshear",
+    "describtion": "if the sum of your dice is higher than 21 gain +9 bones +4 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 21
+    },
+    "effect": {
+      "bones": 9,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "89",
+    "name": "Marrowlight",
+    "describtion": "if the sum of your dice is higher than 23 gain +9 bones +4 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 23
+    },
+    "effect": {
+      "bones": 9,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "90",
+    "name": "Bonefen",
+    "describtion": "if the sum of your dice is higher than 27 gain +10 bones +4 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 27
+    },
+    "effect": {
+      "bones": 10,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "91",
+    "name": "Quietash",
+    "describtion": "if the sum of your dice is higher than 29 gain +11 bones +4 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 29
+    },
+    "effect": {
+      "bones": 11,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "92",
+    "name": "Farrowmark",
+    "describtion": "if the sum of your dice is lower than 13 gain +14 bones +4 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 13
+    },
+    "effect": {
+      "bones": 14,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "93",
+    "name": "Loststar",
+    "describtion": "if the sum of your dice is lower than 14 gain +14 bones +4 Mult",
+    "condition": {
+      "type": "sum_lt",
+      "value": 14
+    },
+    "effect": {
+      "bones": 14,
+      "mult": 4
+    }
+  },
+  {
+    "relicId": "94",
+    "name": "Fellhollow",
+    "describtion": "if you have at least 2 4s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 2
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "95",
+    "name": "Duskglass",
+    "describtion": "if you have at least 2 5s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 2
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "96",
+    "name": "Ashenreach",
+    "describtion": "if you have at least 2 6s gain +5 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 2
+    },
+    "effect": {
+      "mult": 5
+    }
+  },
+  {
+    "relicId": "97",
+    "name": "Ironbloom",
+    "describtion": "if you have at least 3 4s gain +7 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 4,
+      "count": 3
+    },
+    "effect": {
+      "mult": 7
+    }
+  },
+  {
+    "relicId": "98",
+    "name": "Cravenwick",
+    "describtion": "if you have at least 3 5s gain +7 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 5,
+      "count": 3
+    },
+    "effect": {
+      "mult": 7
+    }
+  },
+  {
+    "relicId": "99",
+    "name": "Solemnite",
+    "describtion": "if you have at least 3 6s gain +7 Mult",
+    "condition": {
+      "type": "count_gte",
+      "value": 6,
+      "count": 3
+    },
+    "effect": {
+      "mult": 7
+    }
+  },
+  {
+    "relicId": "100",
+    "name": "Hexwood",
+    "describtion": "if the sum of your dice is higher than 11 gain +9 bones +4 Mult",
+    "condition": {
+      "type": "sum_gt",
+      "value": 11
+    },
+    "effect": {
+      "bones": 9,
+      "mult": 4
+    }
+  }
+]

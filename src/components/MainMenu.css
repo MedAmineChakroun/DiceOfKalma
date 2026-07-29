@@ -1,0 +1,120 @@
+.main-menu {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-panel {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background: var(--cream);
+  position: relative;
+  z-index: 1;
+}
+
+.menu-tagline {
+  font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+  color: var(--purple-dark);
+}
+
+.menu-art {
+  width: 100%;
+}
+
+.menu-dice-row {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.35rem, 2vw, 0.5rem);
+  flex-wrap: wrap;
+}
+
+.menu-die {
+  width: clamp(44px, 12vw, 52px);
+  height: clamp(44px, 12vw, 52px);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 4vw, 1.75rem);
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.menu-play {
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+  padding: 0.65rem 1.5rem;
+}
+
+.menu-secondary {
+  background: var(--purple);
+  color: var(--cream);
+}
+
+.inst-title {
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+}
+
+.inst-list {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+}
+
+.inst-list li {
+  padding: 0.35rem 0;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.inst-list li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}
+
+/* Cuphead halftone corner deco */
+.cuphead-dots {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image: radial-gradient(circle, var(--ink) 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+
+.cuphead-dots--tl {
+  top: 0;
+  left: 0;
+}
+
+.cuphead-dots--br {
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 380px) {
+  .menu-panel {
+    padding: 1rem;
+  }
+}

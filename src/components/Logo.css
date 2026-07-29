@@ -1,0 +1,23 @@
+.kalma-logo {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 0.95;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15em 0.35em;
+}
+
+.kalma-logo--lg {
+  font-size: clamp(3rem, 8vw, 4rem);
+}
+
+.kalma-logo--sm {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.logo-word {
+  display: inline-block;
+  position: relative;
+}

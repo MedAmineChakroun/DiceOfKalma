@@ -1,0 +1,43 @@
+.relic-picker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 18, 8, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.5rem, 3vw, 1rem);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.relic-picker {
+  max-width: 680px;
+  width: 100%;
+  text-align: center;
+  background: var(--orange);
+  max-height: 90dvh;
+  overflow-y: auto;
+}
+
+.picker-title {
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  color: var(--cream);
+  text-shadow: 2px 2px 0 var(--ink);
+}
+
+.picker-sub {
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.relic-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
+  gap: clamp(0.5rem, 2vw, 0.75rem);
+}
+
+@media (max-width: 360px) {
+  .relic-choices {
+    grid-template-columns: 1fr 1fr;
+  }
+}

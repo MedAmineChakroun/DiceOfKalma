@@ -1,0 +1,73 @@
+.leaderboard-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.leaderboard-panel {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+  background: var(--blue);
+  color: var(--cream);
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--cream);
+  text-shadow: 2px 2px 0 var(--ink);
+}
+
+.leaderboard-empty {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.leaderboard-table-wrap {
+  overflow-x: auto;
+  background: var(--cream);
+  color: var(--ink);
+  border: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.45rem 0.5rem;
+  text-align: center;
+  border-bottom: 2px solid var(--ink);
+}
+
+.leaderboard-table th {
+  font-family: var(--font-display);
+  background: var(--paper-dark);
+  letter-spacing: 0.05em;
+}
+
+.leaderboard-table .lb-name {
+  text-align: left;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leaderboard-table tr.rank-1 td:first-child { color: var(--red); font-weight: bold; }
+.leaderboard-table tr.rank-2 td:first-child { color: var(--purple); font-weight: bold; }
+.leaderboard-table tr.rank-3 td:first-child { color: var(--teal-dark); font-weight: bold; }
+
+.leaderboard-panel > button {
+  align-self: center;
+}
